@@ -43,8 +43,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/OpenLF2/OpenLF2.git
-        tag: v0.9.4
-        commit: bb335c9967adbafc6d16b130a8a26f4e984c493b
+        tag: v1.0.0
+        commit: 3b53ddbd7ee20f5d077439017889a6b9a493efe1
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -55,7 +55,7 @@ modules:
     build-commands:
       - install -Dm755 openlf2-launch /app/bin/openlf2-launch
       - install -Dm755 apply_extra /app/bin/apply_extra
-      - desktop-file-edit --set-key=Exec --set-value=openlf2-launch /app/share/applications/io.github.openlf2.OpenLF2.desktop
+      - desktop-file-edit --set-key=Exec --set-value='openlf2-launch -- %f' /app/share/applications/io.github.openlf2.OpenLF2.desktop
     sources:
       # Downloaded and verified by Flatpak at installation, never put in the repository.
       - type: extra-data
