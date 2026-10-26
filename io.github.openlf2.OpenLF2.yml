@@ -43,8 +43,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/OpenLF2/OpenLF2.git
-        tag: v1.1.1
-        commit: 5b23d37f052174991fa2b5d7baa3d6194f7efd5e
+        tag: v1.1.2
+        commit: 41a6b05500507f7d02aa5f2c88a9edf98d8006f7
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
